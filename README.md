@@ -6,7 +6,15 @@ GH Search is a web application built with Next.js and TailwindCSS that allows us
 
 ### Destop:
 
+<img width="1440" alt="Screenshot 2024-10-07 at 1 13 13 AM" src="https://github.com/user-attachments/assets/4e211b49-d7d8-45bb-b725-32212538ef64">
+
+<img width="1438" alt="Screenshot 2024-10-07 at 1 26 21 AM" src="https://github.com/user-attachments/assets/d6200f46-ba0d-41bf-b20c-5bdc729956f8">
+
 ### Mobile:
+
+<img width="313" alt="Screenshot 2024-10-07 at 1 26 02 AM" src="https://github.com/user-attachments/assets/5daac5d2-fd90-4547-be18-88e294a627fc">
+  
+<img width="337" alt="Screenshot 2024-10-07 at 1 25 38 AM" src="https://github.com/user-attachments/assets/ead1af59-cd33-489e-9144-ec559741f56d">
 
 ## Live
 
