@@ -1,40 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 GH Search
 
-## Getting Started
+GH Search is a web application built with Next.js and TailwindCSS that allows users to search for GitHub users.
 
-First, run the development server:
+## ✨ Demos
 
-```bash
-npm run dev
-# or
+### Destop:
+
+### Mobile:
+
+## Live
+
+## 🏁 Getting Started
+
+### 📦 Install Dependencies
+
+```zsh
+yarn install
+```
+
+🖥️ Start the development server
+
+```zsh
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 🐳 Docker Setup
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+To set up the development environment using Docker, follow these steps:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Prerequisites
+Ensure you have Docker and Docker Compose installed on your machine. You can download and install them from the Docker website.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Build and Start the Development Environment
+Use Docker Compose to build and start the development environment:
 
-## Learn More
+```
+docker-compose -f docker-compose.dev.yml up --build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 🚀 Deployment and Checks
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deploys are automatically handled by GitHub Actions. Before pushing, run:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```zsh
+yarn build
+yarn typecheck
+yarn lint
+```
 
-## Deploy on Vercel
+or use all-in-one check:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```zsh
+yarn build-test-typecheck
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🔗 Useful Project Links
+
+API:
+
+- https://api.github.com/
+
+## 📚 Primary Libraries
+
+- NextJS - https://nextjs.org/
+- TailwindCSS - https://tailwindcss.com/
+
+### 🧱 Components
+
+The components under `app/components` should be UI only and reusable. Each component should have its own folder with a
+`index.ts`
+
+### 🎨 Prettier
+
+We use prettier to format the files + `@trivago/prettier-plugin-sort-imports` to automatically sort the imports.
+
+### 🔍 Eslint
+
+We use [AirBnb's](https://www.npmjs.com/package/eslint-config-airbnb) ESLint Typescript rules + prettier rules for linting
+the project.
+
+You can lint the whole project with `yarn lint`.
